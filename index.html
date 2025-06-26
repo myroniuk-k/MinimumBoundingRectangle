@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/mathjs@14.5.2/lib/browser/math.min.js"></script>
-		<title>Minimum bounding rectangle</title>
-	</head>
-	<body>
-		<div class="container">
-			<div>
-				<canvas id="myChart"></canvas>
-			</div>
-			<br/>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@14.5.2/lib/browser/math.min.js"></script>
+    <title> Minimum bounding rectangle </title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <br/>
 
-			<button id="smallSampleButton" class="btn btn-warning"> Generate small sample (N = 50) </button>
-			<button id="bigSampleButton" class="btn btn-warning"> Generate big sample (N = 10000) </button>
-			<br/><br/>
+      <button id="smallSampleButton" class="btn btn-warning"> Generate small sample (N = 50) </button>
+      <button id="bigSampleButton" class="btn btn-warning"> Generate big sample (N = 10000) </button>
+      <br/>
+      <br/>
 
-			<label for="text">Enter points (x1 y1 x2 y2 x3 y3 ...):</label>
-			<div class="input-group">
-				<textarea class="form-control" aria-label="Enter points" id="text" name="text"></textarea>
-			</div>
-			<br/>
-			<button id="inputButton" class="btn btn-primary"> Solve for input </button>
+      <label for="text">Enter points (x1 y1 x2 y2 x3 y3 ...):</label>
+      <div class="input-group">
+        <textarea class="form-control" aria-label="Enter points" id="text" name="text"></textarea>
+      </div>
+      <br/>
+      <button id="inputButton" class="btn btn-primary"> Solve for input </button>
 
-			<script src="index.js"></script>
-		</div>
-	</body>
+      <script src="index.js"></script>
+    </div>
+  </body>
 </html>
